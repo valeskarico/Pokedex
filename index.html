@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
     <title>Pokédex</title>
 </head>
 <body>
-    <h1>Pokédex</h1>
+    <header>
+        <h1>Pokédex</h1>
+    </header>
     <form action="" method="get">
-        <label for="fname"></label>
-        <input type="text" id="fname" name="fname" placeholder="Pokemon Name or ID">
-        <input type="submit" value="Send">
+        <input type="text" id="pokemon-search" required minlength="1" maxlength="30" placeholder="Pokemon Name or ID">
+        <input type="button" id="pokemon-submit" value="GO">
     </form>
-    
-    <p>ID:</p>
-    <p>Height:</p>
-    <p>Weight:</p>
-    <p>Type:</p>
-    <p>Pokemon not found...</p>
-    
+    <div id="card">
+        <img src="" id="pokemon-img">
+        <div class="card-container">
+            <p id="name"></p>
+            <p class="pokemon-id item-content">ID</p>
+            <p class="item-info" id="content-id"></p>
+            <p class="pokemon-height item-content">Height:</p>
+            <p class="item-info" id="content-height"></p>
+            <p class="pokemon-weight item-content">Weight:</p>
+            <p class="item-info" id="content-weight"></p>
+            <p class="pokemon-type item-content">Type:</p>
+            <p class="item-info" id="content-type"></p>
+        </div>
+    </div>
+    <div id="card-error">Pokemon not found</div>
+    <script src="js/script.js"></script>
 </body>
 </html>

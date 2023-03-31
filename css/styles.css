@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
+
+header{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: #FACB1C;
+    text-align: center;
+    -webkit-text-stroke-color: #4E99F7;
+    -webkit-text-stroke-width: 2.5px;
+    margin: 40px 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #DC0A2F;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #FACB1C;
+    color: white;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=button]{
+    background-color: #4E99F7;
+    border-radius: 50%;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#card {
+    background-color: white;
+    width: 300px;
+    border: 15px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 300px;
+    display: none;
+  }
+
+  .card-container {
+    font-weight: bold;
+    padding: 10px 15px 15px 15px;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #name {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  .item-content, .item-info {
+    line-height: 30px;
+  }
+  
+  .item-content {
+    width: 70%;
+  }
+  
+  .item-info {
+    width: 30%;
+  }
+  
+  #pokemon-img {
+    display: block;
+    margin: auto;
+  }
+  
+  #card-error {
+    font-family: 'Press Start 2P', cursive;
+    color: #4E99F7;
+    font-size: 24px;
+    text-align: center;
+    display: none;
+    margin-top: 2rem;
+  }
